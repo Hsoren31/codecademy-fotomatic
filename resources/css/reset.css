@@ -158,3 +158,25 @@ a {
   line-height: 1.4;
   font-size: 16px;
 }
+
+/*Quotes*/
+
+.quote {
+  color: #4A4A4A;
+  font-size: 30px;
+  font-family: 'Palatino', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+/*Footer*/
+
+footer span {
+  color: white;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+ footer .content {
+  background-color: #9b9b9b;
+ }

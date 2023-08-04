@@ -121,3 +121,20 @@ a {
   border-radius: 4px;
 }
 
+/*Features*/
+
+.feature .content{
+  color: #4a4a4a;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+}
+
+.feature .content h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.feature .content h3 {
+  font-size: 16px;
+  font-weight: light;
+}

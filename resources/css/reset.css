@@ -57,12 +57,16 @@ a {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #EAEAEA;
+}
+
 /*Header*/
 .desktop.logo {
   color: #4A4A4A;
   font-size: 24px;
   font-family: 'Roboto Mono', monospace;
-  margin: 1.8rem;
+  margin: 1.9rem;
 }
 
 .desktop li{
@@ -109,22 +113,41 @@ header .content ul{
   border-radius: 4px;
   color: white;
   line-height: 1.4;
+  margin-left: 6.25rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  max-width: 36.875rem;
+  text-align: center;
 }
 
 .header {
   font-size: 50px;
   font-family: 'Rubik', sans-serif;
+  padding-top: 2rem;
+  margin-bottom: .75rem;
+}
+
+.header .cursive {
+  font-family: 'Damion', sans-serif;
 }
 
 .email {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
+
+.email strong {
+  font-weight: bold;
+}
 .email .button {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   background-color: #4a4a4a;
   border-radius: 4px;
+  margin-top: 1.625rem;
+  margin-bottom: 3.5rem;
+  padding: 1rem 0;
 }
 
 /*Features*/

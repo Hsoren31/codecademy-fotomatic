@@ -138,3 +138,23 @@ a {
   font-size: 16px;
   font-weight: light;
 }
+
+/*Filters*/
+
+#filters-section h2,
+#filters-section h3 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#filters-section h2 {
+  opacity: 100%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#filters-section h3 {
+  font-weight: light;
+  line-height: 1.4;
+  font-size: 16px;
+}

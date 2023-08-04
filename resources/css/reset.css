@@ -62,6 +62,7 @@ a {
   color: #4A4A4A;
   font-size: 24px;
   font-family: 'Roboto Mono', monospace;
+  margin: 1.8rem;
 }
 
 .desktop li{
@@ -72,13 +73,18 @@ a {
 }
 
 .desktop img {
-  height: 1rem;
+  height: 2rem;
+  margin: 1rem;
 }
 
-.content,
-.content ul{
+header .content,
+header .content ul{
   display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
 }
+
 
 @media only screen and (min-width: 1024px) {
   .mobile {

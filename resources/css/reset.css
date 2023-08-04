@@ -52,7 +52,12 @@ a {
   text-decoration: none;
 }
 
+/*Universal*/
+* {
+  box-sizing: border-box;
+}
 
+/*Header*/
 .desktop.logo {
   color: #4A4A4A;
   font-size: 24px;
@@ -66,11 +71,53 @@ a {
   line-height: 1.6;
 }
 
-.desktop .icon {
-  
+.desktop img {
+  height: 1rem;
 }
 
 .content,
 .content ul{
   display: flex;
 }
+
+@media only screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+}
+
+
+/*Sign up Section*/
+.banner {
+  background-image: url(../images/banner-landingpage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 10.625rem;
+  padding-bottom: 10.625rem;
+}
+
+#sign-up-cta {
+  background-color: #9DC20A;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  color: white;
+  line-height: 1.4;
+}
+
+.header {
+  font-size: 50px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.email {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.email .button {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #4a4a4a;
+  border-radius: 4px;
+}
+

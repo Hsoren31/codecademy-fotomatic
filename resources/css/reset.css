@@ -156,16 +156,45 @@ header .content ul{
   color: #4a4a4a;
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
+  text-align: center;
 }
 
 .feature .content h2 {
   font-weight: bold;
   font-size: 36px;
+  margin-bottom: 0.5rem;
 }
 
 .feature .content h3 {
   font-size: 16px;
-  font-weight: light;
+  font-weight: lighter;
+}
+
+#features-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  margin: 4rem 2rem 0 2rem;
+}
+
+.feature {
+  background-color: white;
+  padding: 2rem 2rem 4rem 2rem;
+  height: auto;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img{
+  max-width: 90%;
+  max-height: 65%;
+}
+
+.feature .content{
+  margin-top: 2.5rem;
 }
 
 /*Filters*/

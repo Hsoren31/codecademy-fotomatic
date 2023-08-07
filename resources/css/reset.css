@@ -174,7 +174,7 @@ header .content ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.4rem;
-  margin: 4rem 2rem 0 2rem;
+  margin: 4rem 2rem 7.6rem 2rem;
 }
 
 .feature {
@@ -183,12 +183,12 @@ header .content ul{
   height: auto;
 }
 
-.image-container{
+.feature .image-container{
   display: flex;
   justify-content: center;
 }
 
-.image-container img{
+.feature .image-container img{
   max-width: 90%;
   max-height: 65%;
 }
@@ -215,6 +215,27 @@ header .content ul{
   font-weight: light;
   line-height: 1.4;
   font-size: 16px;
+}
+
+#filters-section {
+  background-color: #4A4A4A;
+}
+
+#filters-section .content{
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+#filters-section .images-container{
+  display: flex;
+  padding: 0 1% 4rem 1%;
+}
+
+
+#filters-section img {
+  max-width: 100%;
+  max-height: auto;
 }
 
 /*Quotes*/

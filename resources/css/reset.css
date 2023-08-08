@@ -62,62 +62,109 @@ body {
 }
 
 /*Header*/
-.desktop.logo {
-  color: #4A4A4A;
-  font-size: 24px;
-  font-family: 'Roboto Mono', monospace;
-  margin: 1.9rem;
+header{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
-.desktop li{
-  color: #4A4A4A;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-}
-
-.desktop img {
-  height: 2rem;
-  margin: 1rem;
-}
-
-header .content,
-header .content ul{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: space-between;
-}
-
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .mobile {
     display: none;
   }
+  .desktop.logo {
+    color: #4A4A4A;
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 1.9rem;
+    justify-self: start;
+  }
+  
+  .desktop li{
+    color: #4A4A4A;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .desktop img {
+    height: 2rem;
+    margin: 1rem;
+  }
+  
+  header .content,
+  header .content ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  
 }
 
+@media only screen and (max-width: 768px){
+  .desktop{
+    display: none;
+  }
+
+  .mobile ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .mobile .button {
+    background-color: #9DC20A;
+    padding: 0.5rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+}
 
 /*Sign up Section*/
 .banner {
   background-image: url(../images/banner-landingpage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  padding-top: 10.625rem;
-  padding-bottom: 10.625rem;
+  background-position: right;
+  margin: 0;
 }
 
 #sign-up-cta {
-  background-color: #9DC20A;
-  border: 1px solid #979797;
-  border-radius: 4px;
   color: white;
   line-height: 1.4;
-  margin-left: 6.25rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  max-width: 36.875rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+  #sign-up-cta{
+    background-color: #9DC20A;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    margin-left: 6.25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    max-width: 36.875rem;
+  }
+
+  .banner{
+    padding-top: 10.625rem;
+    padding-bottom: 10.625rem;
+     
+  }
+}
+
+@media only screen and (max-width: 768px){
+  #sign-up-cta .email{
+    display: none;
+  }
+  .banner{
+    padding:4rem;
+  }
 }
 
 .header {
@@ -151,35 +198,92 @@ header .content ul{
 }
 
 /*Features*/
+@media only screen and (max-width: 425px){
+  #features-section{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
 
+  .feature{
+    padding: 1rem 1rem 2rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .feature .content h2 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .feature .content h3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width:425px){
+  .feature{
+    padding: 2rem 2rem 4rem 2rem;
+  }
+
+  .feature .content {
+    text-align: left;
+  }
+  .feature .content h2 {
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  .feature .content h3 {
+    font-size: 16px;
+  }
+
+  #features-section{
+    margin: 2rem 1rem 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+  }
+}
+@media only screen and (min-width: 768px){
+  .feature{
+    padding: 2rem 2rem 4rem 2rem;
+  }
+  .feature .content{
+    text-align: center;
+  
+  }
+  .feature .content h2 {
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  .feature .content h3 {
+    font-size: 16px;
+  }
+
+  #features-section{
+    margin: 4rem 2rem 7.6rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;  }
+}
 .feature .content{
   color: #4a4a4a;
   font-family: 'Roboto', sans-serif;
   line-height: 1.2;
-  text-align: center;
 }
 
 .feature .content h2 {
-  font-weight: bold;
-  font-size: 36px;
   margin-bottom: 0.5rem;
 }
 
 .feature .content h3 {
-  font-size: 16px;
   font-weight: lighter;
-}
-
-#features-section{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.4rem;
-  margin: 4rem 2rem 7.6rem 2rem;
 }
 
 .feature {
   background-color: white;
-  padding: 2rem 2rem 4rem 2rem;
   height: auto;
 }
 
@@ -229,10 +333,14 @@ header .content ul{
 
 #filters-section .images-container{
   display: flex;
-  padding: 0 1% 4rem 1%;
+  padding: 0 1%;
 }
 
-
+@media only screen and (min-width: 768px){
+  #filters-section .images-container{
+    padding: 0 1% 4rem 1%;
+  }
+}
 #filters-section img {
   max-width: 100%;
   max-height: auto;
@@ -254,14 +362,37 @@ header .content ul{
   padding: 5rem 1.8rem 5rem 0;
   text-align: center;
 }
+
+@media only screen and (max-width: 768px) and (min-width: 425px){
+  #quotes-section .content{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .quote{
+    font-size: 24px;
+    line-height: 1.4px;
+  }
+}
 /*Footer*/
 
 footer span {
   color: white;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
+  padding: 1.5rem 1% 1.5rem 2rem;
 }
  footer .content {
   background-color: #9b9b9b;
-  max-height: 3.8rem;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ @media only screen and (max-width: 425px){
+  footer span {
+    font-size: 10px;
+  }
  }
